@@ -1,10 +1,12 @@
 header{
     text-align: center;
+   
 }
 .nav{
     display: flex;
     justify-content: center;
     flex-grow: 1;
+    
 }
 .nav a img{
     opacity: 0.5;
@@ -24,6 +26,7 @@ header .logo{
     display: inline-block;
     width:165px;
     padding-top: 25px;
+    margin-bottom:4% ;
 }
 .nav a:hover{
     background-color: #9d426b;
@@ -34,4 +37,38 @@ header .logo{
     opacity: 1;
     filter: invert(100%); 
   -webkit-filter:invert(100%); 
+}
+ @media all and (max-width:991px ){
+    header{
+        height: 100px;
+        overflow:hidden;
+        transition: height 0.5s linear;
+    }
+    .nav{
+        flex-direction: column;
+    }
+    .nav a{
+        padding: 2% 0;
+        display: flex;
+        
+    }
+    .nav a img{
+        height:min-content;
+        margin: 0;
+    }
+    .nav a p{
+        margin: 0;
+    }
+    header:hover {
+        height: 400px;
+}
+
+} 
+
+
+
+.slider{
+    background-color: rgb(170, 170, 170);;
+    padding: 200px;
+
 }
