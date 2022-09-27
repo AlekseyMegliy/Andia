@@ -2,11 +2,22 @@ header{
     text-align: center;
    
 }
+.header-button{
+    padding: 0;
+    margin-top: 20px;
+    display: none;
+    width: 35px;
+    height: 25px;
+    background-color: rgb(151, 100, 199);
+    border: none;
+    border-radius: 10px;
+    
+}
 .nav{
     display: flex;
     justify-content: center;
     flex-grow: 1;
-    
+    margin-bottom: 20px;
 }
 .nav a img{
     opacity: 0.5;
@@ -16,13 +27,15 @@ header{
     border-top: 5px solid #9d426b;
 }
 .nav a{
-    padding-top: 50px;
+   
+    padding-top: 30px;
     flex-grow: 1;
     text-decoration: none;
     color: rgb(62, 62, 62);
     transition: background-color 0.1s linear;
 }
 header .logo{
+    
     display: inline-block;
     width:165px;
     padding-top: 25px;
@@ -44,6 +57,9 @@ header .logo{
         overflow:hidden;
         transition: height 0.5s linear;
     }
+    .header-button{
+        display: inline-block;
+    }
     .nav{
         flex-direction: column;
     }
@@ -60,15 +76,49 @@ header .logo{
         margin: 0;
     }
     header:hover {
-        height: 400px;
+        height: 415px;
 }
 
 } 
 
+html{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
 
-
+.block-slider{
+    background-color: rgb(226, 226, 226);;
+    box-shadow: inset rgb(177, 177, 177) 0px 0px 7px 0px;
+    margin-right: 0;
+    margin-left: 0;
+}
 .slider{
-    background-color: rgb(170, 170, 170);;
-    padding: 200px;
+    margin-top: 70px;
+    
+}
+.big-img{
+    padding: 5px;
+    background-color: white;
+}
+.sm-imgs{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 0 5px 5px 5px;
 
+}
+.sm-img{
+    padding: 0;
+    margin-left: -5px;
+    opacity: 0.7;
+}
+.sm-img:first-child{
+    margin: 0 1px 0 0 ;
+}
+.sm-img:hover{
+    opacity: 1;
 }
