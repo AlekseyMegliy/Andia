@@ -117,7 +117,7 @@ body{
     opacity: 0.7;
 }
 .sm-img:first-child{
-    margin: 0 1px 0 0 ;
+    margin: 0;
 }
 .sm-img:hover{
     opacity: 1;
