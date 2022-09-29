@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 header{
     text-align: center;
    
@@ -22,10 +23,6 @@ header{
 .nav a img{
     opacity: 0.5;
 }
-.current{
-    background-color: rgb(229, 229, 229);
-    border-top: 5px solid #9d426b;
-}
 .nav a{
    
     padding-top: 30px;
@@ -33,6 +30,11 @@ header{
     text-decoration: none;
     color: rgb(62, 62, 62);
     transition: background-color 0.1s linear;
+}
+.current{
+    background-color: rgb(229, 229, 229);
+    box-shadow: inset #9d426b  0px  5px  0px 0px;
+    
 }
 header .logo{
     
@@ -97,19 +99,20 @@ body{
     margin-left: 0;
 }
 .slider{
-    margin-top: 70px;
+    margin: 50px 0;
     
 }
 .big-img{
-    padding: 5px;
+    outline: 5px solid white;
     background-color: white;
+    
 }
 .sm-imgs{
     margin-left: auto;
     margin-right: auto;
     background-color: white;
-    padding: 0 5px 5px 5px;
-
+    /* padding: 5px 5px 5px 5px; */
+    outline: 5px solid white
 }
 .sm-img{
     padding: 0;
@@ -121,4 +124,29 @@ body{
 }
 .sm-img:hover{
     opacity: 1;
+    cursor:pointer;
+}
+.slider-text{
+    top: -5%;
+    margin-left: auto;
+    margin-right: auto;
+    /* box-shadow: white inset -5px 0px 0px 0px; */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.836);
+    position: relative;
+}
+
+.slider-nav::after{
+    background-image: url(../img/slider-nav-left.png);
+    width: 100px;
+    height: 100px;
+    content: "asdsdfs";
+    color: #9d426b;
+}
+.sm-slider-nav{
+    opacity: 1;
+}
+.block-press h1{
+    text-align: center;
+    font-family: 'Lobster', cursive;
 }
