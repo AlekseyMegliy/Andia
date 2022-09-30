@@ -79,6 +79,7 @@ header .logo{
     }
     header:hover {
         height: 415px;
+        /* Вимкнути кнопки навігації слайдера */
 }
 
 } 
@@ -105,13 +106,75 @@ body{
 .big-img{
     outline: 5px solid white;
     background-color: white;
-    
+    display: none;
 }
+.slider-this-bimg{
+    display: inline-block;
+}
+.slider-text{
+    top: -15%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.836);
+    position: relative;
+    display: none;
+}
+.slider-this-text{
+    display: inline-block;
+}
+.slider-button-left{
+    transition: 
+        left 0.5s ease-in 0s,
+        opacity 0.5s ease-in 0s;
+    display: inline-block;
+    position: absolute;
+    opacity: 0.0;
+    width: 100px;
+    height: 100px;
+    content: " ";
+    top: 370px;
+    left: 15%;
+    background: url(../img/slider-nav-left.png) 0 center no-repeat;
+    cursor: pointer;
+}
+.slider:hover  .slider-button-left{
+    left: 18.5%;
+    opacity: 0.9;
+}
+.slider-button-left:hover{
+    opacity: 1;
+}
+
+.slider-button-right{
+    transition: 
+        right 0.5s ease-in 0s,
+        opacity 0.5s ease-in 0s;
+    display: inline-block;
+    position: absolute;
+    opacity: 0.0;
+    width: 100px;
+    height: 100px;
+    content: " ";
+    top: 370px;
+    right: 12.3%;
+    background: url(../img/slider-nav-right.png) 0 center no-repeat;
+    cursor: pointer;
+}
+.slider:hover  .slider-button-right{
+    right: 15.8%;
+    opacity: 0.9;
+}
+.slider-button-right:hover{
+    opacity: 1;
+}
+
+
 .sm-imgs{
+    margin-top: -5%;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
-    /* padding: 5px 5px 5px 5px; */
     outline: 5px solid white
 }
 .sm-img{
@@ -126,26 +189,87 @@ body{
     opacity: 1;
     cursor:pointer;
 }
-.slider-text{
-    top: -5%;
-    margin-left: auto;
-    margin-right: auto;
-    /* box-shadow: white inset -5px 0px 0px 0px; */
-    color: white;
-    background-color: rgba(0, 0, 0, 0.836);
-    position: relative;
-}
-
-.slider-nav::after{
-    background-image: url(../img/slider-nav-left.png);
-    width: 100px;
-    height: 100px;
-    content: "asdsdfs";
-    color: #9d426b;
-}
-.sm-slider-nav{
+.slider-this-simg{
     opacity: 1;
 }
+
+@media all and (max-width:1200px ){
+    .slider-button-left{
+        top: 320px;
+        left: 17%;
+    }
+    .slider:hover  .slider-button-left{
+        left: 20.5%;
+    }
+    .slider-button-right{
+        top: 320px;
+        right: 12.6%;
+    }
+    .slider:hover  .slider-button-right{
+        right: 17.1%;
+    }
+    .sm-imgs{
+        margin-top: -6%;
+    }
+}
+
+@media all and (max-width:991px ){
+    .slider-this-text{
+        opacity: 0;
+    }
+    .slider-button-left{
+        opacity: 0.9;
+        top: 250px;
+        left: 23.4%;
+    }
+    .slider:hover  .slider-button-left{
+        left: 23.4%;
+    }
+    .slider-button-right{
+        opacity: 0.9;
+        top: 250px;
+        right: 19.2%;
+    }
+    .slider:hover  .slider-button-right{
+        right: 19.2%;
+    }
+    .sm-imgs{
+        margin-top: -12%;
+    }
+}
+@media all and (max-width:767px ){
+    .slider-button-right{
+        width: 50px;
+        height: 50px;
+    }
+    .slider-button-left{
+        width: 50px;
+        height: 50px;
+    }
+    .slider-this-text{
+        opacity: 0;
+    }
+    .slider-button-left{
+        opacity: 0.9;
+        top: 230px;
+        left: 25%;
+    }
+    .slider:hover  .slider-button-left{
+        left: 25%;
+    }
+    .slider-button-right{
+        opacity: 0.9;
+        top: 230px;
+        right: 25%;
+    }
+    .slider:hover  .slider-button-right{
+        right: 25%;
+    }
+    .sm-imgs{
+        margin-top: -21%;
+    }
+}
+
 .block-press h1{
     text-align: center;
     font-family: 'Lobster', cursive;
