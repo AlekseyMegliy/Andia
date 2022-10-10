@@ -251,19 +251,19 @@ body{
     }
     .slider-button-left{
         opacity: 0.9;
-        top: 230px;
-        left: 25%;
+        top: 270px;
+        left: 17%;
     }
     .slider:hover  .slider-button-left{
-        left: 25%;
+        left: 17%;
     }
     .slider-button-right{
         opacity: 0.9;
-        top: 230px;
-        right: 25%;
+        top: 270px;
+        right: 17%;
     }
     .slider:hover  .slider-button-right{
-        right: 25%;
+        right: 17%;
     }
     .sm-imgs{
         margin-top: -21%;
@@ -287,8 +287,26 @@ body{
     text-align: center;
     font-size: 20px;
     opacity: 0.6;
+    margin-bottom: 50px;
 }
 .benef{
     content: " ";
-    border: black 2px solid;
+    background-color: rgba(0, 0, 0, 0.049);
+    margin-right: 5%;
+    text-align: center;
+}
+.benef img{
+    opacity: 0.6;
+}
+.benef h4{
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing:-1px;
+}
+@media all and (max-width:767px ){
+    .benef{
+        content: " ";
+        border: black 2px solid;
+        margin: 0;
+    }
 }
