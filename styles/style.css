@@ -289,24 +289,63 @@ body{
     opacity: 0.6;
     margin-bottom: 50px;
 }
-.benef{
+.benefits{
     content: " ";
     background-color: rgba(0, 0, 0, 0.049);
     margin-right: 5%;
     text-align: center;
+    border-bottom: #9d426b solid 3px;
+    padding-bottom: 20px;
+    transition: box-shadow 0.3s linear ;
 }
-.benef img{
+.benefits img{
     opacity: 0.6;
+    margin: 10px 0;
 }
-.benef h4{
+.benefits h4{
     text-transform: uppercase;
     font-size: 1em;
     letter-spacing:-1px;
+    opacity: 0.8;
+    
+}
+.benefits p{
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+.benefits a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+    font-style: italic;
+    padding: 0.4em 2em;
+    background-color:#9d426b;
+    
+}
+.benefits:hover{
+    box-shadow: inset black 0px 0px 25px -15px;
+}
+@media all and (max-width:1200px ){
+    .benefits h4{
+        font-size: 0.8em;
+        
+    }
+}
+@media all and (max-width:991px ){
+    .benefits a{
+        padding: 0.4em 1em;
+    }
+    .benefits h4{
+        font-size: 0.7em;
+        
+    }
 }
 @media all and (max-width:767px ){
-    .benef{
-        content: " ";
-        border: black 2px solid;
+    .benefits{
         margin: 0;
+       
+    }
+    .benefits h4{
+         font-size: 1em;
     }
 }
