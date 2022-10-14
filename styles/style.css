@@ -3,7 +3,9 @@ header{
     text-align: center;
    
 }
-/* На джс зробити кнопку навігації в хедері, навінацію слайдеру, 
+/* На джс зробити: Щоб зникали кнопки слайдера під час використання кнопки навігації хедера,
+кнопку навігації в хедері, 
+навігнацію слайдеру, 
 обмеження символів в "роботах"*/
 .header-button{
     padding: 0;
@@ -100,6 +102,10 @@ body{
     box-shadow: inset rgb(177, 177, 177) 0px 0px 7px 0px;
     margin-right: 0;
     margin-left: 0;
+    
+}
+.block-slider .row{
+    justify-content: center;
 }
 .slider{
     margin: 50px 0;
@@ -108,19 +114,21 @@ body{
 .big-img{
     outline: 5px solid white;
     background-color: white;
-    display: none;
+    padding:  5px 6px 5px 5px;
+    
 }
 .slider-this-bimg{
     display: inline-block;
 }
 .slider-text{
-    top: -15%;
-    margin-left: auto;
-    margin-right: auto;
+    top: 130px;
+    left: -99%;
     color: white;
     background-color: rgba(0, 0, 0, 0.836);
     position: relative;
+    word-break: break-word;
     display: none;
+    
 }
 .slider-this-text{
     display: inline-block;
@@ -141,7 +149,7 @@ body{
     cursor: pointer;
 }
 .slider:hover  .slider-button-left{
-    left: 18.5%;
+    left: 20.7%;
     opacity: 0.9;
 }
 .slider-button-left:hover{
@@ -164,20 +172,24 @@ body{
     cursor: pointer;
 }
 .slider:hover  .slider-button-right{
-    right: 15.8%;
+    right: 17.9%;
     opacity: 0.9;
 }
 .slider-button-right:hover{
     opacity: 1;
 }
-
+.big-slider{
+    white-space: nowrap; 
+    overflow: hidden;
+}
 
 .sm-imgs{
-    margin-top: -5%;
+    /* margin-top: -5%; */
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
-    outline: 5px solid white
+    /* background-color: white; */
+    /* outline: 5px solid white; */
+    border: 5px solid white;
 }
 .sm-img{
     padding: 0;
@@ -201,14 +213,14 @@ body{
         left: 17%;
     }
     .slider:hover  .slider-button-left{
-        left: 20.5%;
+        left: 22.5%;
     }
     .slider-button-right{
         top: 320px;
         right: 12.6%;
     }
     .slider:hover  .slider-button-right{
-        right: 17.1%;
+        right: 19.1%;
     }
     .sm-imgs{
         margin-top: -6%;
