@@ -3,6 +3,8 @@ header{
     text-align: center;
    
 }
+/* На джс зробити кнопку навігації в хедері, навінацію слайдеру, 
+обмеження символів в "роботах"*/
 .header-button{
     padding: 0;
     margin-top: 20px;
@@ -297,7 +299,7 @@ body{
 }
 .benefits div{
     background-color: rgba(0, 0, 0, 0.049);
-    padding-bottom: 20px;
+    padding-bottom: 20px ;
     border-bottom: #9d426b solid 3px;
     box-shadow: inset black 0px 0px 20px -20px;
     transition: box-shadow 0.3s linear ;
@@ -316,6 +318,7 @@ body{
 .benefits p{
     font-size: 0.9em;
     opacity: 0.9;
+    padding: 0 10px;
 }
 .benefits a{
     text-decoration: none;
@@ -331,7 +334,7 @@ body{
 }
 @media all and (max-width:1200px ){
     .benefits h4{
-        font-size: 0.8em;
+        font-size: 1em;
         
     }
 }
@@ -340,7 +343,7 @@ body{
         padding: 0.4em 1em;
     }
     .benefits h4{
-        font-size: 0.7em;
+        font-size: 0.8em;
         
     }
 }
@@ -356,16 +359,91 @@ body{
     }
 }
 .block-latest{
-    border-image: url("../img/logo.png") 30 / 19px round; 
-    
-}
-
-.block-latest h1{
-    
+    margin-top: 50px;
+    border-top: rgba(0, 0, 0, 0.144) 2px dotted;
     text-align: center;
+}
+.block-latest .h1{
+    margin-top: -32px;
+}
+.block-latest h1{
     font-family: 'Lobster', cursive;
-    padding-top: 50px;
+    padding: 0 20px;
     font-size: 30px;
     font-weight:bold;
     color: rgba(0, 0, 0, 0.704);
+    margin-bottom: 30px;
+    background-color: white;
+    display: inline-block;
+}
+
+.block-latest .row{
+    justify-content: center;
+}
+.latest{
+    text-align: center;
+}
+.latest div{
+    background-color: rgba(0, 0, 0, 0.049);
+    padding-bottom: 15px;
+    border-bottom: #9d426b solid 3px;
+    box-shadow: inset black 0px 0px 20px -20px;
+    transition: box-shadow 0.3s linear ;
+}
+
+.latest h4{
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing:-1px;
+    opacity: 0.8;
+    padding-top: 15px;
+    
+}
+.latest p{
+    font-size: 0.9em;
+    opacity: 0.9;
+    font-style: italic;
+    text-overflow: ellipsis;
+    padding: 0 5px 0 5px;
+}
+.latest a{
+    text-decoration: none;
+    background-color:#9d426b;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+.latest a img{
+    filter: invert(100%); 
+  -webkit-filter:invert(100%); 
+}
+.latest div:hover{
+    box-shadow: inset black 0px 0px 25px -15px;
+}
+@media all and (max-width:1200px ){
+    .latest h4{
+        font-size: 1em;
+    }
+}
+@media all and (max-width:991px ){
+    .latest h4{
+        font-size: 0.8em;
+    }
+  
+}
+@media all and (max-width:767px ){
+    .latest div{
+        margin-bottom: 15px;
+    }
+    .latest{
+        margin: 0;
+    }
+    .latest h4{
+        font-size: 1em;
+   }
+   
 }
