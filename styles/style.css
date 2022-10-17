@@ -459,3 +459,65 @@ body{
    }
    
 }
+
+.block-testimonials{
+    margin-top: 50px;
+    border-top: rgba(0, 0, 0, 0.144) 2px dotted;
+    text-align: center;
+}
+
+.block-testimonials h1{
+    font-family: 'Lobster', cursive;
+    padding: 0 20px;
+    font-size: 30px;
+    font-weight:bold;
+    color: rgba(0, 0, 0, 0.704);
+    margin-bottom: 30px;
+    background-color: white;
+    display: inline-block;
+}
+.block-testimonials .h1{
+    margin-top: -32px;
+}
+.block-testimonials span{
+  vertical-align:top;
+}
+
+.block-testimonials img, .block-testimonials .testimonial span{
+    display: inline-block;
+    margin: 0 10px;
+}
+.block-testimonials p{
+    display: inline-block;
+    text-align: start;
+    padding: 0;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.46);
+    font-style: italic;
+}
+
+.block-testimonials .mail{
+    display: flex;
+    align-self:flex-start;
+    color:#9d426b;
+}
+.testimonial{
+    display: none;
+}
+.testi-this{
+    display: inline-block;
+}
+.testimonial-buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+.testimonial-buttons .buttons{
+    border: none;
+    background-color: #c5c5c5;
+    width: 5%;
+    height: 50%;
+    margin: 2px;
+}
+.testimonial-buttons .buttons-this{
+    background-color: #9d426b;
+}
