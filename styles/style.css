@@ -96,9 +96,12 @@ body{
     padding: 0;
     margin: 0;
 }
-
+.big-slider{
+    white-space: nowrap; 
+    overflow: hidden;
+}
 .block-slider{
-    background-color: rgb(226, 226, 226);;
+    background-color: rgb(240, 240, 240);
     box-shadow: inset rgb(177, 177, 177) 0px 0px 7px 0px;
     margin-right: 0;
     margin-left: 0;
@@ -122,14 +125,16 @@ body{
 }
 .slider-text{
     top: 130px;
-    left: -99%;
-    color: white;
+    left: -96%;
+    color: rgba(255, 255, 255, 0.847);
     background-color: rgba(0, 0, 0, 0.836);
     position: relative;
-    word-break: break-word;
+    word-break:break-all;
+    white-space: normal; 
     display: none;
-    
+    font-style: italic;
 }
+
 .slider-this-text{
     display: inline-block;
 }
@@ -178,18 +183,13 @@ body{
 .slider-button-right:hover{
     opacity: 1;
 }
-.big-slider{
-    white-space: nowrap; 
-    overflow: hidden;
-}
 
 .sm-imgs{
-    /* margin-top: -5%; */
     margin-left: auto;
     margin-right: auto;
-    /* background-color: white; */
-    /* outline: 5px solid white; */
-    border: 5px solid white;
+    border-bottom: 5px solid white;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
 }
 .sm-img{
     padding: 0;
@@ -222,9 +222,7 @@ body{
     .slider:hover  .slider-button-right{
         right: 19.1%;
     }
-    .sm-imgs{
-        margin-top: -6%;
-    }
+    
 }
 
 @media all and (max-width:991px ){
@@ -247,9 +245,7 @@ body{
     .slider:hover  .slider-button-right{
         right: 19.2%;
     }
-    .sm-imgs{
-        margin-top: -12%;
-    }
+   
 }
 @media all and (max-width:767px ){
     .slider-button-right{
@@ -279,9 +275,7 @@ body{
     .slider:hover  .slider-button-right{
         right: 17%;
     }
-    .sm-imgs{
-        margin-top: -21%;
-    }
+   
 }
 
 .block-benefits h1{
@@ -520,4 +514,67 @@ body{
 }
 .testimonial-buttons .buttons-this{
     background-color: #9d426b;
+}
+footer{
+    background-color: rgb(240, 240, 240);
+    box-shadow: inset rgb(177, 177, 177) 0px 0px 7px 0px;
+    margin: 50px 0 0 0;
+}
+
+footer .row{
+    justify-content: center;
+}
+.footer{
+    display: inline-block;
+    margin: 0;
+    padding: 30px 20px 0 20px;
+    
+}
+.footer h4{
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing:-1px;
+    opacity: 0.8;
+}
+footer .contact img{
+    display: inline-block;
+    vertical-align:top;
+    opacity: 0.5;
+}
+footer p{
+    color: #0000008a;
+    font-size: 0.8em;
+    line-height: 200%;
+}
+footer .contact p{
+    display: inline-block;
+    
+}
+footer a{
+    text-decoration: none;
+    color: #9d426b;
+    font-size: 0.9em;
+}
+footer .copyright{
+    margin-top: 50px;
+    border-top: rgba(0, 0, 0, 0.144) 2px dotted;
+}
+.copyright .row{
+    justify-content: space-around;
+}
+.copyright p{
+    text-align: start;
+    padding: 20px 0 0 0;
+}
+.copyright span{
+    text-align: end;
+    margin: 10px 0 10px 0;
+    overflow: hidden;
+}
+.copyright img{
+    margin-top: -30px;
+    transition: margin 0.3s linear;
+}
+.copyright img:hover{
+    margin-bottom: -75px;
 }
