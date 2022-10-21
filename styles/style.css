@@ -538,6 +538,7 @@ footer .row{
 }
 footer .contact img{
     display: inline-block;
+    padding-top: 4px;
     vertical-align:top;
     opacity: 0.5;
 }
