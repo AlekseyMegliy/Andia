@@ -11,8 +11,11 @@
     <title>Andia</title>
 </head>
     
+<?php 
+require 'header.php'; 
+?>
     <!-- browser-sync start --server --directory --files "*" -->
-    <header class="container">
+    <!-- <header class="container">
         <div class="row">
             <a href="./index.html" class="col-5 col-sm-3 col-lg-2 offset-1 align-items-center logo">
                 <img width="165px"  src="img/logo.png">
@@ -52,7 +55,7 @@
             </div>
             <span class="col-1"></span>
         </div>
-    </header>
+    </header> -->
     <div class="block-slider">
         <div class="container">
             <div class="row">
