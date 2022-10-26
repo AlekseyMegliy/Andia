@@ -110,7 +110,8 @@ body{
 }
 .big-slider{
     white-space: nowrap; 
-    overflow: hidden;
+    /* overflow: hidden; */
+    padding: 5px;
 }
 .block-slider{
     background-color: rgb(240, 240, 240);
@@ -127,17 +128,23 @@ body{
     
 }
 .big-img{
-    outline: 5px solid white;
+    outline: 6px solid white;
+    /* border:5px solid white ; */
     background-color: white;
-    padding:  5px 6px 5px 5px;
+    /* padding:  5px 6px 5px 5px; */
+    position: relative;
     
+}
+.big-test ~ .big-img{
+    padding-right: 2px;
+    margin-left: 5px;
 }
 .slider-this-bimg{
     display: inline-block;
 }
 .slider-text{
     top: 130px;
-    left: -96%;
+    left: -100%;
     color: rgba(255, 255, 255, 0.847);
     background-color: rgba(0, 0, 0, 0.836);
     position: relative;
@@ -145,6 +152,7 @@ body{
     white-space: normal; 
     display: none;
     font-style: italic;
+    margin: 0 10px;
 }
 
 .slider-this-text{
@@ -153,7 +161,8 @@ body{
 .slider-button-left{
     transition: 
         left 0.5s ease-in 0s,
-        opacity 0.5s ease-in 0s;
+        opacity 0.5s ease-in 0s,
+        margin 0.5s linear;
     display: inline-block;
     position: absolute;
     opacity: 0.0;
@@ -165,7 +174,8 @@ body{
     background: url(../img/slider-nav-left.png) 0 center no-repeat;
     cursor: pointer;
     margin-top: 0px;
-    transition: margin 0.5s linear;
+    z-index: 5;
+   
 }
 .slider:hover  .slider-button-left{
     left: 20.7%;
@@ -178,7 +188,8 @@ body{
 .slider-button-right{
     transition: 
         right 0.5s ease-in 0s,
-        opacity 0.5s ease-in 0s;
+        opacity 0.5s ease-in 0s,
+        margin 0.5s linear;
     display: inline-block;
     position: absolute;
     opacity: 0.0;
@@ -190,7 +201,7 @@ body{
     background: url(../img/slider-nav-right.png) 0 center no-repeat;
     cursor: pointer;
     margin-top: 0px;
-    transition: margin 0.5s linear;
+    z-index: 5;
 }
 .slider:hover  .slider-button-right{
     right: 17.9%;
@@ -206,9 +217,9 @@ body{
 .sm-imgs{
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 5px solid white;
-    border-left: 5px solid white;
-    border-right: 5px solid white;
+    border: 5px solid white;
+    /* border-left: 5px solid white;
+    border-right: 5px solid white; */
 }
 .sm-img{
     padding: 0;
@@ -360,6 +371,23 @@ body{
     }
    
 }
+
+
+ .big-test{
+    /* margin-left: -100% ;
+    margin-right: -93%; */
+    /* position: relative; */
+    /* left: -100%; */
+}
+
+.big-test2{
+    /* margin-left: -100%; */
+    /* left: -200%; */
+} 
+
+
+
+
 
 .block-benefits h1{
     text-align: center;
