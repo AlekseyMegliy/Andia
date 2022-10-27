@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 header{
     text-align: center;
-   
+    
 }
 /* На джс зробити: Щоб зникали кнопки слайдера під час використання кнопки навігації хедера,
 кнопку навігації в хедері, 
@@ -110,7 +110,7 @@ body{
 }
 .big-slider{
     white-space: nowrap; 
-    /* overflow: hidden; */
+    overflow: hidden;
     padding: 5px;
 }
 .block-slider{
@@ -135,29 +135,26 @@ body{
     position: relative;
     
 }
-.big-test ~ .big-img{
-    padding-right: 2px;
-    margin-left: 5px;
-}
+
 .slider-this-bimg{
     display: inline-block;
 }
 .slider-text{
-    top: 130px;
-    left: -100%;
+    
+    top: 140px;
+    margin-left: -99%; 
     color: rgba(255, 255, 255, 0.847);
     background-color: rgba(0, 0, 0, 0.836);
     position: relative;
-    word-break:break-all;
+    width: 98%;
+    /* word-break:break-all; */
     white-space: normal; 
-    display: none;
+    display: inline-block;
     font-style: italic;
-    margin: 0 10px;
+    /* margin: 0 10px; */
 }
 
-.slider-this-text{
-    display: inline-block;
-}
+
 .slider-button-left{
     transition: 
         left 0.5s ease-in 0s,
@@ -256,7 +253,7 @@ body{
 }
 
 @media all and (max-width:991px ){
-    .slider-this-text{
+    .slider-text{
         opacity: 0;
     }
     .slider-button-left{
@@ -373,19 +370,14 @@ body{
 }
 
 
- .big-test{
-    /* margin-left: -100% ;
-    margin-right: -93%; */
-    /* position: relative; */
-    /* left: -100%; */
+.slider-enter-active, .slider-leave-active {
+    transition: width ease-in-out 1s;
+    
+  }
+.slider-enter, .slider-leave-to  {
+    width: 0;
+
 }
-
-.big-test2{
-    /* margin-left: -100%; */
-    /* left: -200%; */
-} 
-
-
 
 
 
@@ -689,4 +681,8 @@ footer .copyright{
 }
 .copyright img:hover{
     margin-bottom: -75px;
+}
+
+.test{
+    display: none;
 }

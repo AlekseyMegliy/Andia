@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="styles/style.css">
     <title>Andia</title>
 </head>
-    
+<body>
     <!-- browser-sync start --server --directory --files "*" -->
     <header class="container " id="header">
         <div class="row">
             <a href="./index.html" class="col-3 col-sm-3 col-lg-2 offset-sm-1 offset-0 align-items-center logo">
                 <img class="col-10 col-sm-12" width="165px"  src="img/logo.png">
             </a>
-            <button class="offset-4 offset-sm-6 header-button" onclick="headerClick()">
+            <button class="offset-4 offset-sm-6 header-button" onclick="headerClick()"> 
                 <svg>
                     <rect x="10" y="6" width="15" height="2"/>
                     <rect x="10" y="11" width="15" height="2"/>
@@ -56,33 +56,42 @@
     <div class="block-slider">
         <div class="container">
             <div class="row">
-                <div class="slider col-sm-12 col-md-9">
-                    <div class="big-slider ">
-                        <span class="slider-button-left"></span>
-
-                        <img class="col-12 big-img big-test"  src="img/slider/1.jpg">
-                        <p class=" slider-text slider-this-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime et obcaecati, illo porro ex provident nisi ipsam cupiditate quo! Quam, impedit veniam commodi dolores </p>
+                <div class="slider col-sm-12 col-md-9"  id="slider">
+                    <div class="big-slider " >
+                        <span class="slider-button-left" v-on:click="left"></span>
+                        
+                        
+                        <transition name="slider">
+                            <img class="col-12 big-img"  v-if="sm_imgs==1" src="img/slider/1.jpg">
+                        </transition>
+                        <p class=" slider-text " v-if="sm_imgs==1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime et obcaecati, illo porro ex provident nisi ipsam cupiditate quo! Quam, impedit veniam commodi dolores </p>
+                        
+                        
+                        <transition name="slider">
+                            <img class="col-12 big-img" v-if="sm_imgs==2" src="img/slider/2.jpg">
+                        </transition>
+                        <p class=" slider-text " v-if="sm_imgs==2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste magnam eum suscipit accusantium explicabo illum voluptatibus nisi pariatur deleniti, ipsa  </p>
                         
 
-                        <img class="col-12 big-img big-test2" src="img/slider/2.jpg">
-                        <p class=" slider-text slider-this-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste magnam eum suscipit accusantium explicabo illum voluptatibus nisi pariatur deleniti, ipsa  </p>
+                        <transition name="slider">
+                            <img class="col-12 big-img" v-if="sm_imgs==3" src="img/slider/3.jpg">
+                        </transition>
+                        <p class=" slider-text " v-if="sm_imgs==3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eveniet aspernatur repellendus minus error voluptatum nostrum velit, cupiditate architecto adipisci dolorem </p>
                         
 
-                        <img class="col-12 big-img" src="img/slider/3.jpg">
-                        <p class=" slider-text slider-this-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eveniet aspernatur repellendus minus error voluptatum nostrum velit, cupiditate architecto adipisci dolorem </p>
+                        <transition name="slider">
+                            <img class="col-12 big-img " v-if="sm_imgs==4" src="img/slider/4.jpg">
+                        </transition>
+                        <p class=" slider-text  " v-if="sm_imgs==4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus spernatur repellendus minus error voluptatum nostrum velit, cupiditate architecto </p>
                         
 
-                        <img class="col-12 big-img " src="img/slider/4.jpg">
-                        <p class=" slider-text  slider-this-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus spernatur repellendus minus error voluptatum nostrum velit, cupiditate architecto </p>
-                        
-
-                        <span class="slider-button-right"></span>
+                        <span class="slider-button-right" v-on:click="right"></span>
                     </div>
-                    <div class="col-12 sm-imgs ">
-                        <img class="col-3 sm-img slider-this-simg" src="img/slider/1.jpg">
-                        <img class="col-3 sm-img" src="img/slider/2.jpg">
-                        <img class="col-3 sm-img" src="img/slider/3.jpg">
-                        <img class="col-3 sm-img" src="img/slider/4.jpg">
+                    <div class="col-12 sm-imgs " id="sm-imgs">
+                        <img class="col-3 sm-img" v-on:click="sm_imgs=1" src="img/slider/1.jpg" v-on:click="sm-img-first">
+                        <img class="col-3 sm-img" v-on:click="sm_imgs=2" src="img/slider/2.jpg">
+                        <img class="col-3 sm-img" v-on:click="sm_imgs=3" src="img/slider/3.jpg">
+                        <img class="col-3 sm-img" v-on:click="sm_imgs=4" src="img/slider/4.jpg">
                     </div>
                 </div>
             </div>
