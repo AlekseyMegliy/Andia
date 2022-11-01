@@ -28,11 +28,11 @@ jobs:
         run: npm run build
 
       - name: Deploy 🚀
-#         run: npm run deploy
-        uses: AlekseyMegliy/github-pages-deploy-action@3.7.1
-        with:
+        run: npm run deploy
+#         uses: AlekseyMegliy/github-pages-deploy-action@3.7.1
+#         with:
      
-          GITHUB_TOKEN: ${{ secrets.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 }}
-          BRANCH: gh-pages
-          FOLDER: public
-          CLEAN: true
+#           GITHUB_TOKEN: ${{ secrets.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 }}
+#           BRANCH: gh-pages
+#           FOLDER: public
+#           CLEAN: true
