@@ -29,10 +29,9 @@ jobs:
 
       - name: Deploy 🚀
 #         run: npm run deploy
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+        uses: AlekseyMegliy/github-pages-deploy-action@3.7.1
         with:
-          # в значение GITHUB_TOKEN помещается ссылка на ваш секрет в репозитории
-          # в данном случае его название KEY
+     
           GITHUB_TOKEN: ${{ secrets.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 }}
           BRANCH: gh-pages
           FOLDER: public
