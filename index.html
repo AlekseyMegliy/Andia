@@ -58,40 +58,40 @@
             <div class="row">
                 <div class="slider col-sm-12 col-md-9"  id="slider">
                     <div class="big-slider " >
-                        <span class="slider-button-left" v-on:click="left"></span>
+                        <span class="slider-button-left" ></span>
                         
                         
                         <transition name="slider">
-                            <img class="col-12 big-img"  v-if="sm_imgs==1" src="img/slider/1.jpg">
+                            <img class="col-12 big-img"  src="img/slider/1.jpg">
                         </transition>
-                        <p class=" slider-text " v-if="sm_imgs==1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime et obcaecati, illo porro ex provident nisi ipsam cupiditate quo! Quam, impedit veniam commodi dolores </p>
+                        <p class=" slider-text " >Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime et obcaecati, illo porro ex provident nisi ipsam cupiditate quo! Quam, impedit veniam commodi dolores </p>
                         
                         
                         <transition name="slider">
-                            <img class="col-12 big-img" v-if="sm_imgs==2" src="img/slider/2.jpg">
+                            <img class="col-12 big-img"  src="img/slider/2.jpg">
                         </transition>
-                        <p class=" slider-text " v-if="sm_imgs==2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste magnam eum suscipit accusantium explicabo illum voluptatibus nisi pariatur deleniti, ipsa  </p>
+                        <p class=" slider-text " >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste magnam eum suscipit accusantium explicabo illum voluptatibus nisi pariatur deleniti, ipsa  </p>
                         
 
                         <transition name="slider">
-                            <img class="col-12 big-img" v-if="sm_imgs==3" src="img/slider/3.jpg">
+                            <img class="col-12 big-img"  src="img/slider/3.jpg">
                         </transition>
-                        <p class=" slider-text " v-if="sm_imgs==3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eveniet aspernatur repellendus minus error voluptatum nostrum velit, cupiditate architecto adipisci dolorem </p>
+                        <p class=" slider-text " >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eveniet aspernatur repellendus minus error voluptatum nostrum velit, cupiditate architecto adipisci dolorem </p>
                         
 
                         <transition name="slider">
-                            <img class="col-12 big-img " v-if="sm_imgs==4" src="img/slider/4.jpg">
+                            <img class="col-12 big-img " src="img/slider/4.jpg">
                         </transition>
-                        <p class=" slider-text  " v-if="sm_imgs==4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus spernatur repellendus minus error voluptatum nostrum velit, cupiditate architecto </p>
+                        <p class=" slider-text  " >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus spernatur repellendus minus error voluptatum nostrum velit, cupiditate architecto </p>
                         
 
-                        <span class="slider-button-right" v-on:click="right"></span>
+                        <span class="slider-button-right" ></span>
                     </div>
                     <div class="col-12 sm-imgs " id="sm-imgs">
-                        <img class="col-3 sm-img" v-on:click="sm_imgs=1" src="img/slider/1.jpg" v-on:click="sm-img-first">
-                        <img class="col-3 sm-img" v-on:click="sm_imgs=2" src="img/slider/2.jpg">
-                        <img class="col-3 sm-img" v-on:click="sm_imgs=3" src="img/slider/3.jpg">
-                        <img class="col-3 sm-img" v-on:click="sm_imgs=4" src="img/slider/4.jpg">
+                        <img class="col-3 sm-img" src="img/slider/1.jpg" >
+                        <img class="col-3 sm-img" src="img/slider/2.jpg">
+                        <img class="col-3 sm-img" src="img/slider/3.jpg">
+                        <img class="col-3 sm-img" src="img/slider/4.jpg">
                     </div>
                 </div>
             </div>
@@ -313,9 +313,7 @@
             </div>
         </div>
     </footer>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script> -->
-    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
-    <script src="/vue.js"></script>
-    <script src="/scripts.js"></script>
+  
+    <script src="scripts.js"></script>
 </body>
 </html>

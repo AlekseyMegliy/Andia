@@ -11,45 +11,5 @@ function headerClick(){
 }
 
 
-// var headerr = new Vue({
-//     el: header,
-//     methods:{
-//         header_button: function(){
-//             header.classList.toggle("button-click");
-//             slider_button_left.classList.toggle("slider-buttons-move");
-//             slider_button_right.classList.toggle("slider-buttons-move");
-        
-//         }
-//     }
-// })
-
-
-var big_slider = new Vue({
-    el: '#slider',
-    data: {
-        sm_imgs: 1
-    },
-    methods:{
-        right: function(){
-            if(this.sm_imgs != 4){
-                this.sm_imgs +=1;
-            } else{
-                this.sm_imgs=1
-            }
-            
-        },
-        left: function(){
-            if(this.sm_imgs != 1){
-                this.sm_imgs -=1;
-            } else{
-                this.sm_imgs=4
-            }
-            
-        }
-        
-
-    }
-    
-});
 
 

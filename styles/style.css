@@ -111,7 +111,7 @@ body{
 .big-slider{
     white-space: nowrap; 
     overflow: hidden;
-    padding: 5px;
+    
 }
 .block-slider{
     background-color: rgb(240, 240, 240);
@@ -128,12 +128,11 @@ body{
     
 }
 .big-img{
-    outline: 6px solid white;
-    /* border:5px solid white ; */
-    background-color: white;
-    /* padding:  5px 6px 5px 5px; */
-    position: relative;
     
+    border:5px solid white ;
+    background-color: white;
+    position: relative;
+    width: 100%;
 }
 
 .slider-this-bimg{
