@@ -25,7 +25,7 @@ header{
     margin-bottom: 20px;
 }
 .nav a img{
-    opacity: 0.5;
+    opacity: 0.2;
 }
 .nav a{
    
@@ -684,7 +684,36 @@ footer .copyright{
 .copyright img:hover{
     margin-bottom: -75px;
 }
+/* /////////////////////////////PORTFOLIO///////////////////////////////// */
 
-.test{
-    display: none;
+.plate{
+    background-color: rgb(240, 240, 240);
+    box-shadow: inset rgb(177, 177, 177) 0px 0px 7px 0px;
+    margin-right: 0;
+    margin-left: 0;
+    vertical-align: middle;
+    padding: 25px 0;
+}
+.plate .row{
+    vertical-align: middle;
+}
+.plate img{
+    display: inline;
+    width: 75px;
+    opacity: 0.2;
+}
+.plate p{
+    font-size: 25px;
+    font-weight:bold;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top:auto;
+    margin-bottom:auto;
+    font-family: 'Lobster', cursive;
+
+}
+.plate p i{
+    font-weight:normal;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.4);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
