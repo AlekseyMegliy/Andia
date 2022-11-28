@@ -85,10 +85,10 @@
                         <span class="slider-button-right" onclick="sliderRightButton()" ></span>
                     </div>
                     <div class="col-12 sm-imgs " id="sm-imgs">
-                        <img class="col-3 sm-img slider-this-simg" src="img/slider/1.jpg" >
-                        <img class="col-3 sm-img" src="img/slider/2.jpg">
-                        <img class="col-3 sm-img" src="img/slider/3.jpg">
-                        <img class="col-3 sm-img" src="img/slider/4.jpg">
+                        <img class="col-3 sm-img slider-this-simg" src="img/slider/1.jpg" onclick="smallImgClick(this)">
+                        <img class="col-3 sm-img" src="img/slider/2.jpg" onclick="smallImgClick(this)">
+                        <img class="col-3 sm-img" src="img/slider/3.jpg" onclick="smallImgClick(this)">
+                        <img class="col-3 sm-img" src="img/slider/4.jpg" onclick="smallImgClick(this)">
                     </div>
                 </div>
             </div>
@@ -198,7 +198,7 @@
         </div>
         <div class="row">
             <span class="col-1"></span>
-            <div class="testimonial testimonial-one testi-this col-9">
+            <div class="testimonial testi-this col-9">
 
                 <img class="col-sm-2 col-md-1" src="img/testimonials/1.jpg"> 
                 
@@ -209,7 +209,7 @@
                 
             </div>
             
-            <div class="testimonial testimonial-two  col-9">
+            <div class="testimonial  col-9">
 
                 <img class="col-sm-2 col-md-1" src="img/testimonials/1.jpg"> 
                 
@@ -220,7 +220,7 @@
                 
             </div>
 
-            <div class="testimonial testimonial-three col-9">
+            <div class="testimonial col-9">
 
                 <img class="col-sm-2 col-md-1" src="img/testimonials/2.jfif"> 
                 
@@ -231,7 +231,7 @@
                 
             </div>
 
-            <div class="testimonial testimonial-four col-9">
+            <div class="testimonial col-9">
 
                 <img class="col-sm-2 col-md-1" src="img/testimonials/3.png"> 
                 
@@ -244,10 +244,10 @@
         </div>
         <div class="testimonial-buttons row">
             <div class="testimonial-buttons col-3">
-                <input class="col-1 buttons buttons-this" onclick="testimonials()" type="button" id="testimonials">
-                <input class="col-1 buttons" onclick="testimonials()" type="button" id="testimonials">
-                <input class="col-1 buttons" onclick="testimonials()" type="button" id="testimonials">
-                <input class="col-1 buttons" onclick="testimonials()" type="button" id="testimonials">
+                <input class="col-1 buttons buttons-this" onclick="testimonials(this)" type="button" id="testimonials">
+                <input class="col-1 buttons" onclick="testimonials(this)" type="button" id="testimonials">
+                <input class="col-1 buttons" onclick="testimonials(this)" type="button" id="testimonials">
+                <input class="col-1 buttons" onclick="testimonials(this)" type="button" id="testimonials">
             </div>
             <span class="col-2"></span>
         </div>
