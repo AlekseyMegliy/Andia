@@ -13,6 +13,7 @@ let testi_butt_mass = [];
 let benef_mass = [];
 let count = 0;
 let testi_count =0;
+let limit = 120;
 
 for(let slide of slides){
     slide_mass.push(slide);
@@ -26,7 +27,12 @@ for(let testi of testimonial){
 for(let testi_butt of testimonial_buttons){
     testi_butt_mass.push(testi_butt);
 }
-
+for(let benefit of benefits){
+    benef_mass.push(benefit);
+    let cont = benefit.innerHTML.split('');
+    let new_cont = cont.slice(0, limit);
+    benefit.innerHTML = new_cont.join('') + " et..."  
+}
 
 
 function headerClick(){
@@ -98,3 +104,4 @@ function testimonials(element){
     }
 
 }
+
