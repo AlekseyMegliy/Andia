@@ -691,29 +691,135 @@ footer .copyright{
     box-shadow: inset rgb(177, 177, 177) 0px 0px 7px 0px;
     margin-right: 0;
     margin-left: 0;
-    vertical-align: middle;
     padding: 25px 0;
 }
-.plate .row{
-    vertical-align: middle;
-}
+
 .plate img{
     display: inline;
     width: 75px;
     opacity: 0.2;
 }
 .plate p{
+    width: 8%;
+    padding: 0;
     font-size: 25px;
     font-weight:bold;
     color: rgba(0, 0, 0, 0.6);
     margin-top:auto;
     margin-bottom:auto;
     font-family: 'Lobster', cursive;
+    
 
 }
-.plate p i{
+.plate .plate-italic{
+    font-style: italic;
+    padding: 0;
+    width: 30%;
     font-weight:normal;
     font-size: 17px;
+    margin-top:auto;
+    margin-bottom:auto;
     color: rgba(0, 0, 0, 0.4);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+@media all and (max-width:1400px ){
+    .plate p{
+        width: 9%;
+    }
+}
+@media all and (max-width:1200px ){
+    .plate p{
+        width: 11%;
+    }
+}
+@media all and (max-width:991px ){
+    .plate p{
+        width: 20%;
+    }
+    .plate .plate-italic{
+        width: 80%;
+    }
+}
+@media all and (max-width:490px ){
+    .plate p{
+        width: 50%;
+    }
+    .plate .plate-italic{
+        width: 100%;
+    }
+}
+
+.portfolio .portfolio-filter{
+    padding: 50px 20px;
+}
+.portfolio .portfolio-filter p{
+    color: rgba(0, 0, 0, 0.6);
+    display: inline;
+    text-transform: uppercase;
+    font-weight:bold;
+    letter-spacing:-1px;
+    transition: color 0.3s linear;
+    cursor: pointer;
+ 
+}
+.portfolio .portfolio-filter .portfolio-button-this{
+    color: #9d426b;
+}
+.portfolio .portfolio-filter p:hover{
+    color: #9d426b;
+}
+
+.portf-work{
+    text-align: center;
+}
+.portf-work div{
+    background-color: rgba(0, 0, 0, 0.049);
+    padding-bottom: 15px;
+    border-bottom: #9d426b solid 3px;
+    box-shadow: inset black 0px 0px 20px -20px;
+    transition: box-shadow 0.3s linear ;
+    margin-bottom: 15px;
+}
+
+.portf-work h4{
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing:-1px;
+    opacity: 0.8;
+    padding-top: 15px;
+    
+}
+.portf-work p{
+    font-size: 0.8em;
+    opacity: 0.9;
+    font-style: italic;
+    text-overflow: ellipsis;
+    padding: 0 5px;
+}
+
+.portf-work div:hover{
+    box-shadow: inset black 0px 0px 25px -15px;
+}
+@media all and (max-width:1200px ){
+    .portf-work h4{
+        font-size: 1em;
+    }
+}
+@media all and (max-width:991px ){
+    .portf-work h4{
+        font-size: 0.8em;
+    }
+  
+}
+@media all and (max-width:767px ){
+    .portf-work p{
+        padding: 0 15px 
+    }
+    .portf-work{
+        margin: 0;
+    }
+    .portf-work h4{
+        font-size: 1em;
+   }
+   
 }
