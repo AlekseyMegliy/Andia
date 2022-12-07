@@ -103,7 +103,7 @@
             <div class="row col-sm-12 col-md-10">
                 <div class="col-sm-12 col-md-3 benefits">
                     <div>
-                        <img class="col-2 col-sm-1 col-md-4  col-lg-3" src="ico/eye.png">
+                        <img class="col-2 col-sm-1 col-md-4 col-lg-3" src="ico/eye.png">
                         <h4>BEAUTIFUL WEBSITES</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum. Praesentium quae cum, non incidunt voluptas et...</p>
                         <a href="#">Read more</a>
@@ -150,45 +150,82 @@
             <div class="row col-sm-12  offset-sm-0 offset-md-1  col-md-10">
                 <div class="col-sm-12 col-md-3 latest">
                     <div>
-                        <img class="col-12" src="img/slider/1.jpg">
+                        <img class="col-12" src="img/slider/1.jpg" >
                         <h4>BEAUTIFUL WEBSITES</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum. </p>
-                        <a href="#"><img class="col-10" src="ico/zoom2.png"></a>
-                        <a href="#"><img class="col-10" src="ico/link2.png"></a>
+                        <a class="zoom-button" onclick="zoom(this)"><img class="col-10" src="ico/zoom2.png"></a>
+                        <a href="./portfolio.html"><img class="col-10" src="ico/link2.png"></a>
                     </div>
                 </div>
 
                 <div class="col-sm-12 col-md-3 latest">
                     <div>
-                        <img class="col-12" src="img/slider/2.jpg">
+                        <img class="col-12" src="img/slider/2.jpg" >
                         <h4>RESPONSIVE LAYOUT</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum. </p>
-                        <a href="#"><img class="col-10" src="ico/zoom2.png"></a>
-                        <a href="#"><img class="col-10" src="ico/link2.png"></a>
+                        <a class="zoom-button" onclick="zoom(this)"><img class="col-10" src="ico/zoom2.png"></a>
+                        <a href="./portfolio.html"><img class="col-10" src="ico/link2.png"></a>
                     </div>  
                 </div>
 
                 <div class="col-sm-12 col-md-3 latest">
                     <div>
-                        <img class="col-12" src="img/slider/3.jpg">
+                        <img class="col-12" src="img/slider/3.jpg" >
                         <h4>AWESOME LOGOS</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum. </p>
-                        <a href="#"><img class="col-10" src="ico/zoom2.png"></a>
-                        <a href="#"><img class="col-10" src="ico/link2.png"></a>
+                        <a class="zoom-button" onclick="zoom(this)"><img class="col-10" src="ico/zoom2.png"></a>
+                        <a href="./portfolio.html"><img class="col-10" src="ico/link2.png"></a>
                     </div>
                 </div>
 
                 <div class="col-sm-12 col-md-3 latest">
                     <div>
-                        <img class="col-12" src="img/slider/4.jpg">
+                        <img class="col-12" src="img/slider/4.jpg" >
                         <h4>HIGH RES PRINTS</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum.</p>
-                        <a href="#"><img class="col-10" src="ico/zoom2.png"></a>
-                        <a href="#"><img class="col-10" src="ico/link2.png"></a>
+                        <a class="zoom-button" onclick="zoom(this)"><img class="col-10" src="ico/zoom2.png"></a>
+                        <a href="./portfolio.html"><img class="col-10" src="ico/link2.png"></a>
                     </div>
                 </div>
             </div>
-            <span class="col-sm-5 col-md-1 "></span>
+            <div class="col-8 zoom">
+                <img  class="col-12" src="./img/slider/1.jpg">
+                <span class=" col-1 remove-zoom" onclick="removezoom(this)">
+                    <svg>
+                        <rect x="10" y="6" width="17" height="3"/>
+                        <rect x="10" y="6" width="17" height="3"/>
+                    </svg>
+                </span>
+            </div>  
+            <div class="col-8 zoom">
+                <img  class="col-12" src="./img/slider/2.jpg">
+                <span class=" col-1 remove-zoom" onclick="removezoom(this)">
+                    <svg>
+                        <rect x="10" y="6" width="17" height="3"/>
+                        <rect x="10" y="6" width="17" height="3"/>
+                    </svg>
+                </span>
+            </div>  
+            <div class="col-8 zoom" >
+                <img  class="col-12" src="./img/slider/3.jpg">
+                <span class=" col-1 remove-zoom" onclick="removezoom(this)">
+                    <svg>
+                        <rect x="10" y="6" width="17" height="3"/>
+                        <rect x="10" y="6" width="17" height="3"/>
+                    </svg>
+                </span>
+            </div>  
+            <div class="col-8 zoom " >
+                <img  class="col-12" src="./img/slider/4.jpg">
+                <span class=" col-1 remove-zoom" onclick="removezoom(this)">
+                    <svg>
+                        <rect x="10" y="6" width="17" height="3"/>
+                        <rect x="10" y="6" width="17" height="3"/>
+                    </svg>
+                </span>
+            </div>  
+            <div class="" id="backdrop"></div>
+            
         </div>
     </div>
 

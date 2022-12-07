@@ -488,9 +488,7 @@ body{
     display: inline-block;
 }
 
-.block-latest .row{
-    justify-content: center;
-}
+
 .latest{
     text-align: center;
 }
@@ -527,13 +525,68 @@ body{
     display: inline-block;
     text-align: center;
     vertical-align: middle;
+    cursor: pointer;
+    transition:background-color linear 0.2s ;
+}
+.latest a:hover{
+    background-color:#555555;
 }
 .latest a img{
     filter: invert(100%); 
   -webkit-filter:invert(100%); 
 }
 .latest div:hover{
+    opacity: 0.7;
     box-shadow: inset black 0px 0px 25px -15px;
+}
+
+.block-latest .zoom{
+    position: fixed;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: black 0px 0px 5px 0px;
+    z-index: 5;
+    text-align: end;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    
+}
+.block-latest .zoom-this{
+    display: inline-block;
+}
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.block-latest .remove-zoom svg{
+    padding: 0;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: black 0px 0px 1px 0px;
+    fill: #454545;
+    cursor: pointer;
+}
+.block-latest .remove-zoom svg:hover{
+    fill: #00000086;
+}
+.block-latest .remove-zoom rect:first-of-type{
+    transform: rotate(45deg) translate(-20%,-36%);
+    
+}
+.block-latest .remove-zoom rect:last-of-type{
+    transform:translate(140%, 14%) rotate(135deg) ;
 }
 @media all and (max-width:1200px ){
     .latest h4{
@@ -772,6 +825,9 @@ footer .copyright{
 .portf-work{
     text-align: center;
 }
+.portf-work img{
+    cursor: pointer;
+}
 .portf-work div{
     background-color: rgba(0, 0, 0, 0.049);
     padding-bottom: 15px;
@@ -798,7 +854,46 @@ footer .copyright{
 }
 
 .portf-work div:hover{
+    opacity: 0.7;
     box-shadow: inset black 0px 0px 25px -15px;
+}
+.portfolio .zoom{
+    position: fixed;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: black 0px 0px 5px 0px;
+    z-index: 5;
+    text-align: end;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    
+}
+.portfolio .zoom-this{
+    display: inline-block;
+}
+
+.portfolio .remove-zoom svg{
+    padding: 0;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: black 0px 0px 1px 0px;
+    fill: #454545;
+    cursor: pointer;
+}
+.portfolio .remove-zoom svg:hover{
+    fill: #00000086;
+}
+.portfolio .remove-zoom rect:first-of-type{
+    transform: rotate(45deg) translate(-20%,-36%);
+    
+}
+.portfolio .remove-zoom rect:last-of-type{
+    transform:translate(140%, 14%) rotate(135deg) ;
 }
 @media all and (max-width:1200px ){
     .portf-work h4{
