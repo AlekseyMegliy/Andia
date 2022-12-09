@@ -918,3 +918,32 @@ footer .copyright{
    }
    
 }
+
+.important-text{
+    color:#9d426b;
+}
+.services p{
+    padding: 0 15px 15px 15px;
+    font-size: 14px;
+    color: #6e6e6e;
+    line-height: 1.7em;
+}
+.services h2{
+    padding: 50px 15px 5px 15px;
+    font-size: 18px;
+    color:#555555;
+    text-transform: uppercase;
+}
+.services .ad{
+    padding: 20px;
+    background-color: #d5d5d5;
+}
+.services  .ad-text{
+    font-style: italic;
+    font-size: 18px;
+    color: #6e6e6e;
+}
+.services .ad-button{
+    /* background-color: #9d426b; */
+    text-align: end;
+}
