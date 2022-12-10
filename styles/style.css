@@ -924,9 +924,11 @@ footer .copyright{
 }
 .services p{
     padding: 0 15px 15px 15px;
-    font-size: 14px;
-    color: #6e6e6e;
-    line-height: 1.7em;
+    font-size: 0.9em;
+    font-weight: 400;
+    opacity: 0.6;
+    line-height: 1.8em;
+    
 }
 .services h2{
     padding: 50px 15px 5px 15px;
@@ -935,15 +937,46 @@ footer .copyright{
     text-transform: uppercase;
 }
 .services .ad{
-    padding: 20px;
-    background-color: #d5d5d5;
+    display: flex;
+    align-items: center;
+    background-color: #0000000a;
+    transition: box-shadow linear 0.2s;
+    padding: 10px;
 }
-.services  .ad-text{
+.services .ad:hover{
+    box-shadow:#454545 inset 0 0 15px -10px;
+}
+.services .ad-text{
     font-style: italic;
-    font-size: 18px;
+    font-size: 1.1em;
     color: #6e6e6e;
+    padding: 10px;
 }
 .services .ad-button{
-    /* background-color: #9d426b; */
     text-align: end;
+    margin: 10px 0;
+    
+}
+.services .ad-button a{
+    text-decoration: none;
+    font-style: italic;
+    color: white;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #852952;
+    transition: background-color linear 0.2s;
+   
+}
+.services .ad-button a:hover{
+    background-color: #9e2f61;
+}
+.services .ad-button a:active{
+    background-color: #752348;
+}
+.benefits p{
+    line-height: normal;
+    font-size: 0.9em;
+    opacity: 0.9;
+    padding: 0 10px;
 }
