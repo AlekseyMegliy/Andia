@@ -767,7 +767,7 @@ footer .copyright{
 .plate .plate-italic{
     font-style: italic;
     padding: 0;
-    width: 30%;
+    width: 45%;
     font-weight:normal;
     font-size: 17px;
     margin-top:auto;
@@ -791,6 +791,7 @@ footer .copyright{
     }
     .plate .plate-italic{
         width: 80%;
+        padding-left: 10px;
     }
 }
 @media all and (max-width:490px ){
@@ -799,6 +800,7 @@ footer .copyright{
     }
     .plate .plate-italic{
         width: 100%;
+        padding-left: 10px;
     }
 }
 
@@ -979,4 +981,87 @@ footer .copyright{
     font-size: 0.9em;
     opacity: 0.9;
     padding: 0 10px;
+}
+.aboutus{
+    padding: 15px 0;
+}
+.aboutus h1{
+    padding: 20px 15px 5px 15px;
+    font-size: 18px;
+    color:#555555;
+    text-transform: uppercase;
+}
+.aboutus p{
+    padding: 0 15px 0px 15px;
+    font-size: 0.9em;
+    font-weight: 400;
+    opacity: 0.6;
+    line-height: 1.8em;
+}
+
+
+.team .h1{
+    margin: 50px 0 30px 0;
+    border-top: rgba(0, 0, 0, 0.144) 2px dotted;
+    text-align: center;
+    
+}
+.team .h1 div{
+    margin-top: -32px;
+}
+.team h1{
+    font-family: 'Lobster', cursive;
+    padding: 0 20px;
+    font-size: 30px;
+    font-weight:bold;
+    color: rgba(0, 0, 0, 0.704);
+    background-color: white;
+    display: inline-block;
+    
+}
+.teammate{
+    text-align: center;
+}
+.teammate .inTeam{
+    background-color: rgba(0, 0, 0, 0.049);
+    padding-bottom: 15px;
+    border-bottom: #9d426b solid 3px;
+    box-shadow: inset black 0px 0px 20px -20px;
+    transition: box-shadow 0.3s linear ;
+}
+
+.teammate h4{
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing:-1px;
+    opacity: 0.8;
+    padding-top: 15px;
+    
+}
+.teammate p{
+    font-size: 0.9em;
+    opacity: 0.9;
+    font-style: italic;
+    text-overflow: ellipsis;
+    padding: 0 5px 0 5px;
+}
+.teammate .row{
+    justify-content: center;
+}
+.teammate a{
+    text-decoration: none;
+    color: #9d426b;
+    margin: 0 5px;
+    font-size: 0.9em;
+}
+.teammate span{
+   
+    overflow: hidden;
+}
+.teammate span img{
+    margin-top: -30px;
+    transition: margin 0.3s linear;
+}
+.teammate span img:hover{
+    margin-bottom: -67px;
 }
