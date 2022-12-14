@@ -1022,12 +1022,16 @@ footer .copyright{
 .teammate{
     text-align: center;
 }
+.teammate .inTeam:hover{
+    opacity: 0.7;
+    box-shadow:#454545 inset 0 0 15px -5px;
+}
 .teammate .inTeam{
     background-color: rgba(0, 0, 0, 0.049);
     padding-bottom: 15px;
     border-bottom: #9d426b solid 3px;
     box-shadow: inset black 0px 0px 20px -20px;
-    transition: box-shadow 0.3s linear ;
+    transition: box-shadow 0.2s linear, opacity 0.2s linear  ;
 }
 
 .teammate h4{
