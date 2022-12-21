@@ -920,6 +920,9 @@ footer .copyright{
    }
    
 }
+.inviz{
+    display: none;
+}
 
 .important-text{
     color:#9d426b;
@@ -1021,6 +1024,7 @@ footer .copyright{
 }
 .teammate{
     text-align: center;
+    margin: 10px 0;
 }
 .teammate .inTeam:hover{
     opacity: 0.7;
@@ -1055,7 +1059,7 @@ footer .copyright{
 .teammate a{
     text-decoration: none;
     color: #9d426b;
-    margin: 0 5px;
+    margin: 0 0px;
     font-size: 0.9em;
 }
 .teammate span{
@@ -1068,4 +1072,20 @@ footer .copyright{
 }
 .teammate span img:hover{
     margin-bottom: -67px;
+}
+@media all and (min-width:991px ){
+    .teammate a{
+        margin: 0 5px;
+        
+    }
+}
+@media all and (max-width:991px ){
+   
+}
+@media all and (max-width:767px ){
+    .teammate a{
+        margin: 0 20px;
+        
+    }
+   
 }

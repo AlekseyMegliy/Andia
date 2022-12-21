@@ -4,9 +4,16 @@ let slider_button_right = document.querySelector(".slider-button-right");
 let slides = document.querySelectorAll(".slide");
 let small_imgs = document.querySelectorAll(".sm-img");
 let home_page_zoom = document.querySelectorAll('.zoom');
-let home_page_zoom_button = document. querySelectorAll(".zoom-button");
-let home_page_remove_zoom = document. querySelectorAll(".remove-zoom");
+let home_page_zoom_button = document.querySelectorAll(".zoom-button");
+let home_page_remove_zoom = document.querySelectorAll(".remove-zoom");
 let backdrop = document.getElementById("backdrop");
+let portfolio_button_all = document.querySelector(".portfolio-button-all");
+let portfolio_button_web = document.querySelector(".portfolio-button-web");
+let portfolio_button_logo = document.querySelector(".portfolio-button-logo");
+let portfolio_button_print = document.querySelector(".portfolio-button-print");
+let filter_web = document.querySelectorAll(".web")
+let filter_logo = document.querySelectorAll(".logo")
+let filter_print = document.querySelectorAll(".print")
 let testimonial = document.querySelectorAll(".testimonial");
 let testimonial_buttons = document.querySelectorAll(".buttons");
 let benefits = document.querySelectorAll(".benefits div p");
@@ -126,6 +133,69 @@ function removezoom(element){
             toggle_func(home_page_zoom_mass, home_zoom_count, "zoom-this");
             backdrop.classList.toggle("backdrop")
             
+        }
+    }
+}
+
+function filter(type){
+    if(type == 'all'){
+        portfolio_button_all.classList.add("portfolio-button-this");
+        portfolio_button_web.classList.remove("portfolio-button-this");
+        portfolio_button_logo.classList.remove("portfolio-button-this");
+        portfolio_button_print.classList.remove("portfolio-button-this");
+        for( web of filter_web){
+            web.classList.remove("inviz")    
+        }
+        for( logo of filter_logo){
+            logo.classList.remove("inviz")
+        }
+        for( prints of filter_print){
+            prints.classList.remove("inviz")
+        }
+    }
+    if(type == 'web'){
+        portfolio_button_all.classList.remove("portfolio-button-this");
+        portfolio_button_web.classList.add("portfolio-button-this");
+        portfolio_button_logo.classList.remove("portfolio-button-this");
+        portfolio_button_print.classList.remove("portfolio-button-this");
+        for( web of filter_web){
+            web.classList.remove("inviz")
+        }
+        for( logo of filter_logo){
+            logo.classList.add("inviz")
+        }
+        for( prints of filter_print){
+            prints.classList.add("inviz")
+        }
+    }
+    if(type == 'logo'){
+        portfolio_button_all.classList.remove("portfolio-button-this");
+        portfolio_button_web.classList.remove("portfolio-button-this");
+        portfolio_button_logo.classList.add("portfolio-button-this");
+        portfolio_button_print.classList.remove("portfolio-button-this");
+        for( web of filter_web){
+            web.classList.add("inviz")
+        }
+        for( logo of filter_logo){
+            logo.classList.remove("inviz")
+        }
+        for( prints of filter_print){
+            prints.classList.add("inviz")
+        }
+    }
+    if(type == 'print'){
+        portfolio_button_all.classList.remove("portfolio-button-this");
+        portfolio_button_web.classList.remove("portfolio-button-this");
+        portfolio_button_logo.classList.remove("portfolio-button-this");
+        portfolio_button_print.classList.add("portfolio-button-this");
+        for( web of filter_web){
+            web.classList.add("inviz")
+        }
+        for( logo of filter_logo){
+            logo.classList.add("inviz")
+        }
+        for( prints of filter_print){
+            prints.classList.remove("inviz")
         }
     }
 }
