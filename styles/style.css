@@ -762,7 +762,9 @@ footer .copyright{
     margin-bottom:auto;
     font-family: 'Lobster', cursive;
     
-
+}
+.plate-contact p{
+    width: 9%;
 }
 .plate .plate-italic{
     font-style: italic;
@@ -779,10 +781,16 @@ footer .copyright{
     .plate p{
         width: 9%;
     }
+    .plate-contact p{
+        width: 11%;
+    }
 }
 @media all and (max-width:1200px ){
     .plate p{
         width: 11%;
+    }
+    .plate-contact p{
+        width: 13%;
     }
 }
 @media all and (max-width:991px ){
@@ -792,6 +800,9 @@ footer .copyright{
     .plate .plate-italic{
         width: 80%;
         padding-left: 10px;
+    }
+    .plate-contact p{
+        width: 30%;
     }
 }
 @media all and (max-width:490px ){
@@ -1085,7 +1096,25 @@ footer .copyright{
 @media all and (max-width:767px ){
     .teammate a{
         margin: 0 20px;
-        
     }
-   
+}
+.block-contact{
+    margin-top: 50px;
+}
+.block-contact p{
+    padding: 0 15px 0px 15px;
+    font-size: 0.9em;
+    font-weight: 400;
+    opacity: 0.6;
+    line-height: 1.8em;
+}
+.form, .map{
+    border: black 2px solid;
+    
+}
+.map h2{
+    padding-left: 20px ;
+    font-size: 18px;
+    color:#555555;
+    text-transform: uppercase;
 }
