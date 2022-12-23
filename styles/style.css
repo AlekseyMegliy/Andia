@@ -1109,12 +1109,51 @@ footer .copyright{
     line-height: 1.8em;
 }
 .form, .map{
-    border: black 2px solid;
+    /* border: black 2px solid; */
     
 }
 .map h2{
     padding-left: 20px ;
+    margin-top: 15px;
     font-size: 18px;
-    color:#555555;
+    color:#5f5f5f;
     text-transform: uppercase;
+}
+.map p{
+    padding-left: 20px;
+}
+form label{
+    padding:  5px 0px 2px;
+    font-size: 0.9em;
+    font-weight: 400;
+    opacity: 0.8;
+    line-height: 1em;
+    padding: 20px 0 5px ;
+}
+form input, form textarea{
+    font-style: italic;
+    
+    font-size: 0.9em;
+    font-weight: 400;
+    opacity: 0.5;
+    line-height: 1.4em;
+}
+input[type=submit]{
+    margin-top:20px ;
+    opacity: 1;
+    text-decoration: none;
+    font-style: normal;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    padding: 5px 50px;
+    background-color: #ab2b65;
+    transition: background-color linear 0.2s;
+    border: none;
+}
+input[type=submit]:hover{
+    background-color: #9e2f61;
+}
+input[type=submit]:active{
+    background-color: #752348;
 }
