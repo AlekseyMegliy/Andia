@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon"  type="image/x-icon" href="ico/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="ico/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <link rel="stylesheet" href="styles/style.css">
     <title>Andia</title>
 </head>
+
 <body>
-    
+
     <header class="container " id="header">
         <div class="row">
             <a href="./index.html" class="col-3 col-sm-3 col-lg-2 offset-sm-1 offset-0 align-items-center logo">
-                <img width="165px"  src="img/logo.png">
+                <img width="165px" src="img/logo.png">
             </a>
-            <button class="offset-4 offset-sm-6 header-button" onclick="headerClick()"> 
+            <button class="offset-4 offset-sm-6 header-button" onclick="headerClick()">
                 <svg>
-                    <rect x="10" y="6" width="15" height="2"/>
-                    <rect x="10" y="11" width="15" height="2"/>
-                    <rect x="10" y="16" width="15" height="2"/>
+                    <rect x="10" y="6" width="15" height="2" />
+                    <rect x="10" y="11" width="15" height="2" />
+                    <rect x="10" y="16" width="15" height="2" />
                 </svg>
             </button>
             <div class="col-sm-11 offset-sm-1 col-lg-5 col-xl-5 offset-lg-2 offset-xl-3 nav">
@@ -29,7 +32,7 @@
                     <img src="ico//home-sm.png">
                     <p>HOME</p>
                 </a>
-                <a href="./portfolio.html"  class="current">
+                <a href="./portfolio.html" class="current">
                     <img src="ico/portfolio-sm.png">
                     <p>PORTFOLIO</p>
                 </a>
@@ -53,18 +56,18 @@
             <span class="col-1"></span>
         </div>
     </header>
-    <div class="plate">    
+    <div class="plate">
         <div class="container">
             <div class="row">
-                
+
                 <img class=" offset-sm-1 offset-0 " src="ico/portfolio.png">
-                <p class=" offset-0" >Portfolio / </p> 
+                <p class=" offset-0">Portfolio / </p>
                 <p class=" plate-italic offset-sm-1 offset-lg-0 ">Here is the work we've done so far</p>
             </div>
 
         </div>
     </div>
-    <div class="portfolio"> 
+    <div class="portfolio">
         <div class="container">
             <div class="row">
                 <span class="offset-sm-1 offset-0 col-10 portfolio-filter">
@@ -74,237 +77,239 @@
                     <p onclick="filter('print')" class="portfolio-button-print">PRINT DESIGN </p>
                 </span>
             </div>
-            
-                
-                <div class="row offset-sm-0 offset-md-1 col-sm-12 col-md-10">
-                    <div  class="col-sm-12 col-md-3 web portf-work">
-                        <div>
-                            <img class="col-12 zoom-button" onclick="zoom(this)" src="img/portfolio/work1.jpg">
-                            <h4>Lorem WEBSITE</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum. </p>
-                           
-                        </div>
-                    </div>
-    
-                    <div class="col-sm-12 col-md-3 logo portf-work">
-                        <div>
-                            <img class="col-12 zoom-button" onclick="zoom(this)" src="img/portfolio/work2.jpg">
-                            <h4>ipsum LOGO</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum. </p>
-                          
-                        </div>  
-                    </div>
-    
-                    <div class="col-sm-12 col-md-3 print portf-work">
-                        <div>
-                            <img class="col-12 zoom-button" onclick="zoom(this)" src="img/portfolio/work3.jpg">
-                            <h4>dolor PRINT</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum. </p>
-                          
-                        </div>
-                    </div>
-    
-                    <div class="col-sm-12 col-md-3 web portf-work">
-                        <div>
-                            <img class="col-12 zoom-button" onclick="zoom(this)" src="img/portfolio/work4.jpg">
-                            <h4>sit WEBSITE</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum.</p>
-                           
-                        </div>
-                    </div>
-                
-                    <div class="col-sm-12 col-md-3 logo portf-work">
-                        <div>
-                            <img class="col-12 zoom-button" onclick="zoom(this)" src="img/portfolio/work5.jpg">
-                            <h4>amet logo</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum. </p>
-                           
-                        </div>
-                    </div>
-    
-                    <div class="col-sm-12 col-md-3 print portf-work">
-                        <div>
-                            <img class="col-12 zoom-button" onclick="zoom(this)" src="img/portfolio/work6.jpg">
-                            <h4>consectetur print</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum. </p>
-                          
-                        </div>  
-                    </div>
-    
-                    <div class="col-sm-12 col-md-3 web portf-work">
-                        <div>
-                            <img class="col-12 zoom-button" onclick="zoom(this)" src="img/portfolio/work7.jpg">
-                            <h4>adipisicing WEBSITE</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum. </p>
-                          
-                        </div>
-                    </div>
-    
-                    <div class="col-sm-12 col-md-3 logo portf-work">
-                        <div>
-                            <img class="col-12 zoom-button" onclick="zoom(this)" src="img/portfolio/work8.jpg">
-                            <h4>elit logo</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum.</p>
-                           
-                        </div>
-                    </div>
-                
-                    <div class="col-sm-12 col-md-3 print portf-work">
-                        <div>
-                            <img class="col-12 zoom-button" onclick="zoom(this)" src="img/portfolio/work9.jpg">
-                            <h4>Perspiciatis print</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum. </p>
-                           
-                        </div>
-                    </div>
-    
-                    <div class="col-sm-12 col-md-3 web portf-work">
-                        <div>
-                            <img class="col-12 zoom-button" onclick="zoom(this)" src="img/portfolio/work10.jpg">
-                            <h4>eius WEBSITE</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum. </p>
-                          
-                        </div>  
-                    </div>
-    
-                    <div class="col-sm-12 col-md-3 logo portf-work">
-                        <div>
-                            <img class="col-12 zoom-button" onclick="zoom(this)" src="img/portfolio/work11.jpg">
-                            <h4>eum logo</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum. </p>
-                          
-                        </div>
-                    </div>
-    
-                    <div class="col-sm-12 col-md-3 print portf-work">
-                        <div>
-                            <img class="col-12 zoom-button" onclick="zoom(this)" src="img/portfolio/work12.jpg">
-                            <h4>Lorem print</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum.</p>
-                           
-                        </div>
+
+
+            <div class="row offset-sm-0 offset-md-1 col-sm-12 col-md-10">
+                <div class="col-sm-12 col-md-3 web portf-work">
+                    <div>
+                        <img class="col-12 zoom-button" onclick="zoom(this)" src="img/portfolio/work1.jpg">
+                        <h4>Lorem WEBSITE</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum. </p>
+
                     </div>
                 </div>
-                <div class="col-8 zoom">
-                    <img  class="col-12" src="img/portfolio/work1.jpg">
-                    <span class=" col-1 remove-zoom" onclick="removezoom(this)">
-                        <svg>
-                            <rect x="10" y="6" width="17" height="3"/>
-                            <rect x="10" y="6" width="17" height="3"/>
-                        </svg>
-                    </span>
-                </div>  
-                <div class="col-8 zoom">
-                    <img  class="col-12" src="img/portfolio/work2.jpg">
-                    <span class=" col-1 remove-zoom" onclick="removezoom(this)">
-                        <svg>
-                            <rect x="10" y="6" width="17" height="3"/>
-                            <rect x="10" y="6" width="17" height="3"/>
-                        </svg>
-                    </span>
-                </div>  
-                <div class="col-8 zoom" >
-                    <img  class="col-12" src="img/portfolio/work3.jpg">
-                    <span class=" col-1 remove-zoom" onclick="removezoom(this)">
-                        <svg>
-                            <rect x="10" y="6" width="17" height="3"/>
-                            <rect x="10" y="6" width="17" height="3"/>
-                        </svg>
-                    </span>
-                </div>  
-                <div class="col-8 zoom " >
-                    <img  class="col-12" src="img/portfolio/work4.jpg">
-                    <span class=" col-1 remove-zoom" onclick="removezoom(this)">
-                        <svg>
-                            <rect x="10" y="6" width="17" height="3"/>
-                            <rect x="10" y="6" width="17" height="3"/>
-                        </svg>
-                    </span>
-                </div> 
-                <div class="col-8 zoom">
-                    <img  class="col-12" src="img/portfolio/work5.jpg">
-                    <span class=" col-1 remove-zoom" onclick="removezoom(this)">
-                        <svg>
-                            <rect x="10" y="6" width="17" height="3"/>
-                            <rect x="10" y="6" width="17" height="3"/>
-                        </svg>
-                    </span>
-                </div>  
-                <div class="col-8 zoom">
-                    <img  class="col-12" src="img/portfolio/work6.jpg">
-                    <span class=" col-1 remove-zoom" onclick="removezoom(this)">
-                        <svg>
-                            <rect x="10" y="6" width="17" height="3"/>
-                            <rect x="10" y="6" width="17" height="3"/>
-                        </svg>
-                    </span>
-                </div>  
-                <div class="col-8 zoom">
-                    <img  class="col-12" src="img/portfolio/work7.jpg">
-                    <span class=" col-1 remove-zoom" onclick="removezoom(this)">
-                        <svg>
-                            <rect x="10" y="6" width="17" height="3"/>
-                            <rect x="10" y="6" width="17" height="3"/>
-                        </svg>
-                    </span>
-                </div>  
-                <div class="col-8 zoom">
-                    <img  class="col-12" src="img/portfolio/work8.jpg">
-                    <span class=" col-1 remove-zoom" onclick="removezoom(this)">
-                        <svg>
-                            <rect x="10" y="6" width="17" height="3"/>
-                            <rect x="10" y="6" width="17" height="3"/>
-                        </svg>
-                    </span>
-                </div>  
-                <div class="col-8 zoom">
-                    <img  class="col-12" src="img/portfolio/work9.jpg">
-                    <span class=" col-1 remove-zoom" onclick="removezoom(this)">
-                        <svg>
-                            <rect x="10" y="6" width="17" height="3"/>
-                            <rect x="10" y="6" width="17" height="3"/>
-                        </svg>
-                    </span>
-                </div>  
-                <div class="col-8 zoom">
-                    <img  class="col-12" src="img/portfolio/work10.jpg">
-                    <span class=" col-1 remove-zoom" onclick="removezoom(this)">
-                        <svg>
-                            <rect x="10" y="6" width="17" height="3"/>
-                            <rect x="10" y="6" width="17" height="3"/>
-                        </svg>
-                    </span>
-                </div>  
-                <div class="col-8 zoom">
-                    <img  class="col-12" src="img/portfolio/work11.jpg">
-                    <span class=" col-1 remove-zoom" onclick="removezoom(this)">
-                        <svg>
-                            <rect x="10" y="6" width="17" height="3"/>
-                            <rect x="10" y="6" width="17" height="3"/>
-                        </svg>
-                    </span>
-                </div>  
-                <div class="col-8 zoom">
-                    <img  class="col-12" src="img/portfolio/work12.jpg">
-                    <span class=" col-1 remove-zoom" onclick="removezoom(this)">
-                        <svg>
-                            <rect x="10" y="6" width="17" height="3"/>
-                            <rect x="10" y="6" width="17" height="3"/>
-                        </svg>
-                    </span>
-                </div>   
-                <div class="" id="backdrop"></div>
-                
+
+                <div class="col-sm-12 col-md-3 logo portf-work">
+                    <div>
+                        <img class="col-12 zoom-button" onclick="zoom(this)" src="img/portfolio/work2.jpg">
+                        <h4>ipsum LOGO</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum. </p>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-3 print portf-work">
+                    <div>
+                        <img class="col-12 zoom-button" onclick="zoom(this)" src="img/portfolio/work3.jpg">
+                        <h4>dolor PRINT</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum. </p>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-3 web portf-work">
+                    <div>
+                        <img class="col-12 zoom-button" onclick="zoom(this)" src="img/portfolio/work4.jpg">
+                        <h4>sit WEBSITE</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum.</p>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-3 logo portf-work">
+                    <div>
+                        <img class="col-12 zoom-button" onclick="zoom(this)" src="img/portfolio/work5.jpg">
+                        <h4>amet logo</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum. </p>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-3 print portf-work">
+                    <div>
+                        <img class="col-12 zoom-button" onclick="zoom(this)" src="img/portfolio/work6.jpg">
+                        <h4>consectetur print</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum. </p>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-3 web portf-work">
+                    <div>
+                        <img class="col-12 zoom-button" onclick="zoom(this)" src="img/portfolio/work7.jpg">
+                        <h4>adipisicing WEBSITE</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum. </p>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-3 logo portf-work">
+                    <div>
+                        <img class="col-12 zoom-button" onclick="zoom(this)" src="img/portfolio/work8.jpg">
+                        <h4>elit logo</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum.</p>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-3 print portf-work">
+                    <div>
+                        <img class="col-12 zoom-button" onclick="zoom(this)" src="img/portfolio/work9.jpg">
+                        <h4>Perspiciatis print</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum. </p>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-3 web portf-work">
+                    <div>
+                        <img class="col-12 zoom-button" onclick="zoom(this)" src="img/portfolio/work10.jpg">
+                        <h4>eius WEBSITE</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum. </p>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-3 logo portf-work">
+                    <div>
+                        <img class="col-12 zoom-button" onclick="zoom(this)" src="img/portfolio/work11.jpg">
+                        <h4>eum logo</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum. </p>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-3 print portf-work">
+                    <div>
+                        <img class="col-12 zoom-button" onclick="zoom(this)" src="img/portfolio/work12.jpg">
+                        <h4>Lorem print</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius eum.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 zoom">
+                <img class="col-12" src="img/portfolio/work1.jpg">
+                <span class=" col-1 remove-zoom" onclick="removezoom(this)">
+                    <svg>
+                        <rect x="10" y="6" width="17" height="3" />
+                        <rect x="10" y="6" width="17" height="3" />
+                    </svg>
+                </span>
+            </div>
+            <div class="col-8 zoom">
+                <img class="col-12" src="img/portfolio/work2.jpg">
+                <span class=" col-1 remove-zoom" onclick="removezoom(this)">
+                    <svg>
+                        <rect x="10" y="6" width="17" height="3" />
+                        <rect x="10" y="6" width="17" height="3" />
+                    </svg>
+                </span>
+            </div>
+            <div class="col-8 zoom">
+                <img class="col-12" src="img/portfolio/work3.jpg">
+                <span class=" col-1 remove-zoom" onclick="removezoom(this)">
+                    <svg>
+                        <rect x="10" y="6" width="17" height="3" />
+                        <rect x="10" y="6" width="17" height="3" />
+                    </svg>
+                </span>
+            </div>
+            <div class="col-8 zoom ">
+                <img class="col-12" src="img/portfolio/work4.jpg">
+                <span class=" col-1 remove-zoom" onclick="removezoom(this)">
+                    <svg>
+                        <rect x="10" y="6" width="17" height="3" />
+                        <rect x="10" y="6" width="17" height="3" />
+                    </svg>
+                </span>
+            </div>
+            <div class="col-8 zoom">
+                <img class="col-12" src="img/portfolio/work5.jpg">
+                <span class=" col-1 remove-zoom" onclick="removezoom(this)">
+                    <svg>
+                        <rect x="10" y="6" width="17" height="3" />
+                        <rect x="10" y="6" width="17" height="3" />
+                    </svg>
+                </span>
+            </div>
+            <div class="col-8 zoom">
+                <img class="col-12" src="img/portfolio/work6.jpg">
+                <span class=" col-1 remove-zoom" onclick="removezoom(this)">
+                    <svg>
+                        <rect x="10" y="6" width="17" height="3" />
+                        <rect x="10" y="6" width="17" height="3" />
+                    </svg>
+                </span>
+            </div>
+            <div class="col-8 zoom">
+                <img class="col-12" src="img/portfolio/work7.jpg">
+                <span class=" col-1 remove-zoom" onclick="removezoom(this)">
+                    <svg>
+                        <rect x="10" y="6" width="17" height="3" />
+                        <rect x="10" y="6" width="17" height="3" />
+                    </svg>
+                </span>
+            </div>
+            <div class="col-8 zoom">
+                <img class="col-12" src="img/portfolio/work8.jpg">
+                <span class=" col-1 remove-zoom" onclick="removezoom(this)">
+                    <svg>
+                        <rect x="10" y="6" width="17" height="3" />
+                        <rect x="10" y="6" width="17" height="3" />
+                    </svg>
+                </span>
+            </div>
+            <div class="col-8 zoom">
+                <img class="col-12" src="img/portfolio/work9.jpg">
+                <span class=" col-1 remove-zoom" onclick="removezoom(this)">
+                    <svg>
+                        <rect x="10" y="6" width="17" height="3" />
+                        <rect x="10" y="6" width="17" height="3" />
+                    </svg>
+                </span>
+            </div>
+            <div class="col-8 zoom">
+                <img class="col-12" src="img/portfolio/work10.jpg">
+                <span class=" col-1 remove-zoom" onclick="removezoom(this)">
+                    <svg>
+                        <rect x="10" y="6" width="17" height="3" />
+                        <rect x="10" y="6" width="17" height="3" />
+                    </svg>
+                </span>
+            </div>
+            <div class="col-8 zoom">
+                <img class="col-12" src="img/portfolio/work11.jpg">
+                <span class=" col-1 remove-zoom" onclick="removezoom(this)">
+                    <svg>
+                        <rect x="10" y="6" width="17" height="3" />
+                        <rect x="10" y="6" width="17" height="3" />
+                    </svg>
+                </span>
+            </div>
+            <div class="col-8 zoom">
+                <img class="col-12" src="img/portfolio/work12.jpg">
+                <span class=" col-1 remove-zoom" onclick="removezoom(this)">
+                    <svg>
+                        <rect x="10" y="6" width="17" height="3" />
+                        <rect x="10" y="6" width="17" height="3" />
+                    </svg>
+                </span>
+            </div>
+            <div class="" id="backdrop"></div>
+
         </div>
     </div>
     <footer>
         <div class="container">
             <div class="row">
-            
+
                 <div class="col-sm-12 col-md-10 row">
                     <div class="col-sm-12 col-md-3 footer">
                         <h4>about us</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, eius repellendus saepe molestiae quisquam eaque doloribus fuga sit deserunt! Nam doloribus nihil animi voluptas unde vero corrupti sint voluptates et.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, eius repellendus saepe
+                            molestiae quisquam eaque doloribus fuga sit deserunt! Nam doloribus nihil animi voluptas
+                            unde vero corrupti sint voluptates et.</p>
                         <a href="#">Read more...</a>
                     </div>
                     <div class="col-sm-12 col-md-3 footer">
@@ -340,12 +345,13 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
         <div class="container copyright">
             <div class="row">
-                <p class="col-sm-6 col-mg-7 col-lg-4 ">Copyright 2012 Andia - All rights reserved. Template by Azmind.</p>
+                <p class="col-sm-6 col-mg-7 col-lg-4 ">Copyright 2012 Andia - All rights reserved. Template by Azmind.
+                </p>
                 <span class="col-sm-5 col-md-4 col-lg-3">
                     <a href="#"><img class="col-sm-1" src="img/social-icons/email.png"></a>
                     <a href="#"><img class="col-sm-1" src="img/social-icons/facebook.png"></a>
@@ -355,7 +361,8 @@
             </div>
         </div>
     </footer>
-  
+
     <script src="scripts.js"></script>
 </body>
+
 </html>

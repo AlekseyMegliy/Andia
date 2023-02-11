@@ -3,10 +3,6 @@ header{
     text-align: center;
     
 }
-/* На джс зробити: Щоб зникали кнопки слайдера під час використання кнопки навігації хедера,
-кнопку навігації в хедері, 
-навігнацію слайдеру, 
-обмеження символів в "роботах"*/
 .header-button{
     padding: 0;
     margin-top: 20px;
@@ -934,7 +930,7 @@ footer .copyright{
 .inviz{
     display: none;
 }
-
+/*/////////////////////////////////////////Services//////////////////////////////// */
 .important-text{
     color:#9d426b;
 }
@@ -996,6 +992,7 @@ footer .copyright{
     opacity: 0.9;
     padding: 0 10px;
 }
+/*////////////////////////////////////////////ABOUT US////////////////////////////*/
 .aboutus{
     padding: 15px 0;
 }
@@ -1098,6 +1095,7 @@ footer .copyright{
         margin: 0 20px;
     }
 }
+/*/////////////////////////////////////CONTACT/////////////////////////////////////////*/
 .block-contact{
     margin-top: 50px;
 }
@@ -1108,10 +1106,7 @@ footer .copyright{
     opacity: 0.6;
     line-height: 1.8em;
 }
-.form, .map{
-    /* border: black 2px solid; */
-    
-}
+
 .map h2{
     padding-left: 20px ;
     margin-top: 15px;
